@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Anju Prabhu is a full stack developer building interactive, data-driven web applications.">
+    <meta name="theme-color" content="#f6f8fb">
+    <title>Anju Prabhu | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Anju Prabhu, home"><span>AP</span> Anju Prabhu</a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.6 8.6 0 0 1 8.9 3.8 8.8 8.8 0 1 0 20.2 15.1Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Open to new opportunities</p>
+          <h1>Hi, I'm <span>Anju.</span></h1>
+          <p class="hero-role">Full Stack Developer</p>
+          <p class="hero-intro">I build interactive, data-driven web applications, from the database and REST API to a clean, responsive UI.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">&#8595;</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch <span aria-hidden="true">&#8599;</span></a>
+          </div>
+          <ul class="featured-skills" aria-label="Key skills">
+            <li>Angular</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="hero-mark reveal" aria-label="Anju Prabhu initials">
+          <div class="mark-frame">
+            <span class="mark-index">DEVELOPER / 01</span>
+            <span class="monogram">AP</span>
+            <span class="mark-caption">Thoughtful software,<br>from end to end.</span>
+            <span class="mark-cross" aria-hidden="true">+</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-wrap about-section" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A little about me</p>
+          <h2>Good products start<br>with good foundations.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>I am a full stack developer who enjoys turning ideas into well-crafted, interactive web experiences.</p>
+          <p>On the front end I work with Angular, TypeScript and Tailwind CSS; on the back end with Node.js, Express and MySQL.</p>
+        </div>
+      </section>
+
+      <section class="section-wrap skills-section" aria-labelledby="skills-title">
+        <div class="section-heading section-heading-compact reveal">
+          <p class="eyebrow">My toolkit</p>
+          <h2 id="skills-title">Skills &amp; technologies</h2>
+        </div>
+        <div class="skill-groups">
+          <article class="skill-group reveal">
+            <span class="skill-number">01</span><h3>Frontend</h3>
+            <ul><li>Angular</li><li>TypeScript</li><li>RxJS</li><li>Signals</li><li>Tailwind CSS</li><li>HTML &amp; SCSS</li></ul>
+          </article>
+          <article class="skill-group reveal">
+            <span class="skill-number">02</span><h3>Backend</h3>
+            <ul><li>Node.js</li><li>Express</li><li>REST APIs</li><li>MySQL</li></ul>
+          </article>
+          <article class="skill-group reveal">
+            <span class="skill-number">03</span><h3>Tools</h3>
+            <ul><li>Git</li><li>Docker</li><li>Leaflet</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrap projects-section" id="projects">
+        <div class="section-heading project-heading reveal">
+          <div><p class="eyebrow">Selected work / 01</p><h2>Projects</h2></div>
+          <p>Ideas made tangible through thoughtful engineering.</p>
+        </div>
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img class="project-image" src="assets/know-your-country.png" alt="Know Your Country map showing Italy highlighted across Europe" loading="lazy">
+            <span class="image-label">Interactive mapping</span>
+          </div>
+          <div class="project-content">
+            <p class="project-index">01 / FEATURED PROJECT</p>
+            <h3>Know Your Country</h3>
+            <p class="project-summary">An interactive map application: search any country to see its borders highlighted on the map, along with its flag, capital, currency, population and more.</p>
+            <ul class="project-highlights">
+              <li>Leaflet map that draws each country's border from GeoJSON</li>
+              <li>Node.js + Express REST API with search, autocomplete and ISO-code lookup</li>
+              <li>MySQL database seeded with ~200 countries, borders and key facts</li>
+              <li>Zoneless Angular 20 app built with signals</li>
+            </ul>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>Angular</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>Leaflet</li><li>Tailwind CSS</li><li>Docker</li>
+            </ul>
+          </div>
+        </article>
+        <p class="more-work reveal"><span aria-hidden="true">+</span> More projects coming soon</p>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-wrap contact-inner reveal">
+          <p class="eyebrow">Have a good one in mind?</p>
+          <h2>Let's work<br>together.</h2>
+          <p>I'm interested in full stack and front end roles, and always happy to talk about interesting projects.</p>
+          <span class="contact-status"><span class="status-dot"></span> Open to new opportunities</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="wordmark" href="#home"><span>AP</span> Anju Prabhu</a>
+      <p>&copy; <span id="year"></span> Anju Prabhu</p>
+      <a class="back-top" href="#home">Back to top <span aria-hidden="true">&#8593;</span></a>
+    </footer>
+  </body>
+</html>
